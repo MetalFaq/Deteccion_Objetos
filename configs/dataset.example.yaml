@@ -1,0 +1,9 @@
+# Example only. Replace every path and class with your own dataset contract.
+path: ../data/processed/example
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: object_a
+  1: object_b

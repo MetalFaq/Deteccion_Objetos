@@ -1,0 +1,41 @@
+.venv/
+venv/
+.bootstrap_uv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Datasets, models, experiment runs, and generated artifacts
+data/raw/**
+data/interim/**
+data/processed/**
+models/**/*.pt
+models/**/*.pth
+models/**/*.onnx
+models/**/*.engine
+outputs/**
+runs/
+mlruns/
+
+# Preserve the documentation placeholders
+!data/**/README.md
+!models/README.md
+!outputs/.gitkeep
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

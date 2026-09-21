@@ -1,0 +1,19 @@
+project:
+  name: example-object-detection
+  seed: 42
+
+detector:
+  backend: ultralytics
+  model: yolo26n.pt
+  confidence_threshold: 0.50
+  device: auto
+
+paths:
+  dataset: data/processed
+  models: models/local
+  outputs: outputs
+
+tracking:
+  enabled: false
+  provider: mlflow
+  experiment_name: example-object-detection
